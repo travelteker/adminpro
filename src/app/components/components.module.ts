@@ -6,11 +6,16 @@ import { ChartsModule } from 'ng2-charts';
 
 import { IncrementadorComponent } from './incrementador/incrementador.component';
 import { DoughnutComponent } from './doughnut/doughnut.component';
+import { RadarComponent } from './radar/radar.component';
 
 
 
 @NgModule({
-  declarations: [IncrementadorComponent, DoughnutComponent],
+  declarations: [
+    IncrementadorComponent,
+    DoughnutComponent,
+    RadarComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -19,6 +24,7 @@ import { DoughnutComponent } from './doughnut/doughnut.component';
   exports: [
     IncrementadorComponent,
     DoughnutComponent,
+    RadarComponent
   ]
 })
 export class ComponentsModule { }
