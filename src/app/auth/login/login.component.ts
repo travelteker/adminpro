@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+// Para utilizar funciones globales javascript dentro de Angular
+declare function customInitFunctions(): void;
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,5 +19,7 @@ export class LoginComponent implements OnInit {
   login(): void {
     // Navigate to Dashboard
     this.router.navigateByUrl('/');
+    // Para tener disponible el javascript que realiza el TOGGLE del menú lateral a través del botón hamburguer
+    customInitFunctions();
   }
 }

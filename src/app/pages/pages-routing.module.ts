@@ -12,10 +12,10 @@ const routes: Routes = [
     path: 'dashboard',
     component: PagesComponent,
     children: [
-      { path: '', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafica1', component: Grafica1Component },
-      { path: 'account-settings', component: AccountSettingsComponent },
+      { path: '', component: DashboardComponent, data: {titulo: 'Inicio'} },
+      { path: 'progress', component: ProgressComponent, data: {titulo: 'Progreso'} },
+      { path: 'grafica1', component: Grafica1Component, data: {titulo: 'Estadísticas'} },
+      { path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Configuración'} },
     ]
   },
 ];

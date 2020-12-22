@@ -49,6 +49,8 @@ const customInitFunctions = () => {
     // ==============================================================
     // Theme options
     // ==============================================================
+    // Método para hacer función el botón Hamburguer y que oculte o muestre el menú Sidebar
+    // ====================================================================================
     $(".sidebartoggler").on('click', function() {
         if ($("body").hasClass("mini-sidebar")) {
             $("body").trigger("resize");
@@ -59,9 +61,9 @@ const customInitFunctions = () => {
             $("body").trigger("resize");
             $("body").addClass("mini-sidebar");
             $('.navbar-brand span').hide();
-
         }
     });
+    // ====================================================================================
 
     // this is for close icon when navigation open in mobile view
     $(".nav-toggler").click(function() {
